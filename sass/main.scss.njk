@@ -4,12 +4,12 @@ $font: (
 );
 
 // Palette.
-{% set palette = site.params.palettes[site.params.palette].sass %}
+{% set palette = site.params.palette %}
 $palette: (
   primary:   #444,
   secondary: darken(#444, 15%),
   border:    lighten(#444, 55%),
-  accent:    {{ palette.accent }}
+  accent:    {{ palette }}
 );
 
 @import "imports/functions";
@@ -21,3 +21,4 @@ $palette: (
 @import "imports/posts";
 @import "imports/sections";
 @import "imports/footer";
+@import "imports/feature";

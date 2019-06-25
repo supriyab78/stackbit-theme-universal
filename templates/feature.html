@@ -1,0 +1,15 @@
+{% extends "body.html" %}
+
+{% block content %}
+
+  <div class="feature">
+    {% if page.params.image %}
+    <div class="feature-image">
+      <img src="{{ page.params.image | relative_url }}" alt="{{ page.params.title }}" />
+    </div>
+    {% endif %}
+    <h1 class="post-title">{{ page.params.title }}</h1>
+    {{ page.content }}
+  </div>
+
+{% endblock %}

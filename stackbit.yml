@@ -45,15 +45,6 @@ models:
         name: tagline
         label: Tagline
         description: The tagline displayed in the site header.
-  footer:
-    type: data
-    file: footer.yml
-    label: Footer
-    fields:
-      - type: string
-        name: copyright
-        label: Copyright
-        description: The copyright text displayed in the footer.
   home:
     type: page
     label: Home

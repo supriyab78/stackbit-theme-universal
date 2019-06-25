@@ -2,23 +2,9 @@
 
 {% block content %}
 
-  <article class="post page post-full">
-    {% if page.params.img_path %}
-    <div class="post-thumbnail">
-      <img src="{{ page.params.img_path | relative_url }}" alt="{{ page.params.title }}" />
-    </div><!-- .post-thumbnail -->
-    {% endif %}
-    <header class="post-header">
-      <h1 class="post-title">{{ page.params.title }}</h1>
-    </header><!-- .post-header -->
-    {% if page.params.subtitle %}
-    <div class="post-subtitle">
-      {{ page.params.subtitle | safe }}
-    </div><!-- .post-subtitle -->
-    {% endif %}
-    <div class="post-content">
-      {{ page.content }}
-    </div><!-- .post-content -->
-  </article><!-- .post -->
+<div class="page">
+  {{ page.title }}
+  {{ page.content }}
+</div>
 
 {% endblock %}
