@@ -1,0 +1,27 @@
+{% extends "body.html" %}
+
+{% block content %}
+
+  <article class="post post-full">
+    {% if page.params.content_img_path %}
+    <div class="post-thumbnail">
+      <img src="{{ page.params.content_img_path | relative_url }}" alt="{{ page.params.title }}" />
+    </div><!-- .post-thumbnail -->
+    {% endif %}
+    <header class="post-header">
+      <h1 class="post-title">{{ page.params.title }}</h1>
+      <div class="post-meta">
+        <time class="published" datetime="{{page.date | date_format("%Y-%m-%d %H:%M") }}">{{page.date | date_format("%A, %B %e, %Y") }}</time>
+      </div><!-- .post-meta -->
+    </header><!-- .post-header -->
+    {% if page.params.subtitle %}
+    <div class="post-subtitle">
+      {{ page.params.subtitle | safe }}
+    </div><!-- .post-subtitle -->
+    {% endif %}  
+    <div class="post-content">
+      {{ page.content }}
+    </div><!-- .post-content -->
+  </article><!-- .post -->
+
+{% endblock %}

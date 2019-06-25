@@ -1,0 +1,220 @@
+stackbitVersion: ~0.2.39
+uploadDir: images
+metadata:
+  title: universal
+  description: A starter theme for Unibit
+  author: Stackbit
+  authorURL: 'https://www.stackbit.com'
+  images:
+    small: images/demo-256x192.png
+    large: images/demo-1024x768.png
+models:
+  config:
+    type: config
+    label: Global Site Config
+    fields:
+      - type: enum
+        name: palette
+        label: Color Palette
+        description: The color palette of the theme.
+        options:
+          - blue
+          - green
+        default: blue
+      - type: object
+        name: palettes
+        label: Palettes
+        hidden: true
+        fields:
+          - type: palette
+            name: blue
+            label: Blue
+          - type: palette
+            name: green
+            label: Green
+  header:
+    type: data
+    file: header.yml
+    label: Header
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title displayed in the site header.
+      - type: string
+        name: tagline
+        label: Tagline
+        description: The tagline displayed in the site header.
+  footer:
+    type: data
+    file: footer.yml
+    label: Footer
+    fields:
+      - type: string
+        name: copyright
+        label: Copyright
+        description: The copyright text displayed in the footer.
+  home:
+    type: page
+    label: Home
+    template: home
+    file: index.md
+    hideContent: true
+    singleInstance: true
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the page.
+        required: true
+      - type: list
+        name: sections
+        label: Sections
+        description: Homepage sections.
+        items:
+          type: reference
+          labelField: title
+          models:
+            - contentblock
+            - postsblock
+  blog:
+    type: page
+    label: Blog
+    template: blog
+    file: blog/index.md
+    hideContent: true
+    singleInstance: true
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the page.
+        required: true
+  page:
+    type: page
+    label: Page
+    template: page
+    exclude: posts/**
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the page.
+        required: true
+      - type: string
+        name: subtitle
+        label: Subtitle
+        description: The text shown just below the page title.
+      - type: image
+        name: img_path
+        label: Image
+        description: The featured image of the page.
+  post:
+    type: page
+    label: Post
+    template: post
+    folder: posts
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the post.
+        required: true
+      - type: string
+        name: subtitle
+        label: Subtitle
+        description: The text shown just below the post title.
+      - type: date
+        name: date
+        label: Date
+        required: true
+      - type: image
+        name: thumb_img_path
+        label: Image
+        description: The featured image shown in the blog feed.
+      - type: image
+        name: content_img_path
+        label: Alternative Image
+        description: The featured image shown in the single post.
+      - type: string
+        name: excerpt
+        label: Excerpt
+        description: The excerpt of the post displayed in the blog feed.
+  section:
+    type: object
+    label: Section
+    labelField: title
+    fields:
+      - type: string
+        name: title
+        label: Title
+        required: true
+        description: The title of the section.
+      - type: string
+        name: section_id
+        label: Section ID
+        required: true
+      - type: list
+        name: actions
+        label: Action Buttons
+        items:
+          type: action
+      - type: string
+        name: component
+        label: Component
+        required: true
+        hidden: true
+  contentblock:
+    type: object
+    label: Content Section with Optional Image
+    extends:
+      - section
+    fields:
+      - name: component
+        default: content_block.html
+      - type: image
+        name: image
+        label: Image
+        description: The image displayed above the section title.
+      - type: markdown
+        name: content
+        label: Content
+        description: The text content of the section.
+  postsblock:
+    type: object
+    label: Posts List
+    extends:
+      - section
+    fields:
+      - name: component
+        default: posts_block.html
+      - type: number
+        name: num_posts_displayed
+        label: Number of posts to display
+        required: true
+  action:
+    type: object
+    label: Action
+    labelField: label
+    fields:
+      - type: string
+        name: label
+        label: Label
+        required: true
+        description: The text displayed inside the button.
+      - type: string
+        name: url
+        label: URL
+        description: The URL of the button.
+        widget: url
+  palette:
+    type: object
+    label: Palette
+    fields:
+      - type: object
+        name: sass
+        label: SASS
+        fields:
+          - type: color
+            name: accent
+            label: Accent
