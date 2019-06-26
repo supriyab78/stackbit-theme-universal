@@ -6,6 +6,11 @@ a {
   }
 }
 
+p {
+  color: $grey;
+  margin-bottom: 20px;
+}
+
 h1,
 h2,
 h3,
@@ -15,40 +20,35 @@ h6 {
   color: $secondary;
   font-weight: bold;
   line-height: 1.2;
-  margin: 1.875rem 0 1.125rem;
+  margin: 10px 0 20px 0;
   text-rendering: optimizeLegibility;
-
   &:first-child {
     margin-top: 0;
   }
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 40px;
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 30px;
 }
 
 h3 {
-  font-size: 1.875rem;
+  font-size: 26px;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 h6 {
-  font-size: 1.125rem;
-}
-
-p {
-  margin: 0 0 1.75em;
+  font-size: 16px;
 }
 
 pre {
@@ -115,6 +115,7 @@ ol {
 li > ul,
 li > ol {
   margin-bottom: 0;
+  color: $grey;
 }
 
 hr {
@@ -140,72 +141,6 @@ td {
 th {
   color: $secondary;
   font-weight: bold;
-}
-
-/* Form fields */
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-input[type="search"],
-input[type="url"],
-select,
-textarea {
-  background: #fff;
-  border: 1px solid $secondary;
-  box-shadow: none;
-  box-sizing: border-box;
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.5;
-  max-width: 100%;
-  padding: 0.5em 10px;
-  vertical-align: baseline;
-  width: 100%;
-
-  &:focus {
-    outline: 0;
-  }
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-input[type="search"],
-input[type="url"],
-select {
-  height: 2.5rem;
-}
-
-button,
-input[type="submit"],
-input[type="button"],
-input[type="reset"],
-a.button {
-  background-color: $primary;
-  border: 0;
-  box-sizing: border-box;
-  color: $secondary;
-  display: inline-block;
-  font-size: 1rem;
-  height: 2.5rem;
-  line-height: 1.5;
-  padding: 0 30px;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: rgba($primary, 0.75);
-    outline: 0;
-  }
-}
-
-a.button {
-  text-decoration: none;
-  padding-bottom: 0.5em;
-  padding-top: 0.5em;
 }
 
 /* Videos, audios and embeds */

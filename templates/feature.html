@@ -1,18 +1,10 @@
 {% extends "body.html" %}
-
 {% block content %}
-
   <div class="feature">
-    {% if page.params.image %}
-    <div class="feature-image">
-      <img src="{{ page.params.image | relative_url }}" alt="{{ page.params.title }}" />
-    </div>
-    {% endif %}
-    <h1 class="post-title">{{ page.params.title }}</h1>
+    <h1>{{ page.params.title }}</h1>
     {{ page.content }}
     <footer class="feature-meta">
       <time class="published" datetime="{{page.date | date_format("%Y-%m-%d %H:%M") }}">{{feature.date | date_format("%A, %B %e, %Y") }}</time>
     </footer>
   </div>
-
 {% endblock %}

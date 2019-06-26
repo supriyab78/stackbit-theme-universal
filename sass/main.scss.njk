@@ -1,14 +1,18 @@
-// Font.
-$font-base: "Helvetica Neue" ,Helvetica ,sans-serif;
+// Font
+$font-base: "Helvetica Neue" , Helvetica , apple-system, arial, sans-serif;
 
 // Color Palette
 {% set palette = site.params.primary_color %}
 $primary: {{ palette }};
 $secondary: darken(#444, 15%);
+$grey: #383838;
+$black: #031E34;
 
 @import "imports/reset";
-@import "imports/main";
+@import "imports/layout";
 @import "imports/general";
+@import "imports/main";
 @import "imports/header";
 @import "imports/footer";
 @import "imports/feature";
+@import "imports/buttons";

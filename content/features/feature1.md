@@ -1,7 +1,7 @@
 ---
 title: Build With Unibit
 template: feature
-description: Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo.
+description: Unibit is a static site generator that using the Nunjucks templating system.
 image_thumbnail: images/1.jpg
 ---
 

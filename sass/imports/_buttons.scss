@@ -1,0 +1,37 @@
+.button {
+  display: inline-block;
+  min-width: 64px;
+  padding: 0 40px;
+  border-radius: 32px;
+  background: #3eb2fd linear-gradient(1deg, #4f58fd 0%, #149bf3 99%);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 64px;
+  line-height: 64px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-position 0.2s;
+  background-position: 0 0;
+  background-size: calc(100% + 40px) calc(100% + 40px);
+  white-space: nowrap;
+  &.cta-round {
+    padding: 0;
+
+    svg {
+      height: 100%;
+    }
+  }
+  &:hover {
+    color: #ffffff;
+    background-position: -40px -40px;
+    text-decoration: none;
+  }
+  .cta-icon {
+    margin: 0 5px 0 0;
+  }
+}

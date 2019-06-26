@@ -45,23 +45,48 @@ models:
         name: heading
         label: Heading
         description: The heading displayed on the homepage
+      - type: boolean
+        name: show_button
+        label: Show Button
+        description: Show or hide the button on the hompage
+      - type: string
+        name: button_url
+        label: Button URL
+        description: Button link
+      - type: string
+        name: button_text
+        label: Button Text
+        description: Text displayed in the button
   social:
     type: data
-    file: social.json
-    label: Social Links
+    file: generators.json
+    label: Static Site Generators
     fields:
       - type: list
-        name: links
-        label: Social Links
-        description: A list of social links displayed in the footer.
+        name: ssg
+        label: Static Site Generators
+        description: A list of static site generators supported by Stackbit
         items:
           type: object
           labelField: title
           fields:
             - type: string
-              name: type
-              label: Type
-              hidden: true
+              name: title
+              label: Title
+              required: true
+            - type: string
+              name: url
+              label: URL
+              widget: url
+              required: true
+      - type: list
+        name: cms
+        label: Headless CMS
+        description: A list of headless CMS supported by Stackbit
+        items:
+          type: object
+          labelField: title
+          fields:
             - type: string
               name: title
               label: Title

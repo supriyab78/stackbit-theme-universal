@@ -1,7 +1,8 @@
 ---
-title: Connect a CMS
+title: Connect any Headless CMS
 template: feature
 image_thumbnail: images/3.jpg
+description: Using the powerful content model defined in stackbit.yml you can map content and front matter to work with any Headless CMS.
 ---
 
-Sed non magna at diam vulputate eleifend. Nunc lacinia turpis justo, id fermentum lacus bibendum ut. Vivamus mollis est quis ligula consequat, nec iaculis odio facilisis. Pellentesque ullamcorper libero quis est luctus, a posuere mi mollis. Proin quis accumsan ipsum. Sed ultrices enim odio, eget convallis massa auctor non. Aenean vulputate eget eros at facilisis. Nam vitae mattis arcu.
+Praesent tincidunt arcu sit amet dolor varius, at faucibus metus mollis. Pellentesque consectetur, magna vel porttitor viverra, libero nulla mollis ante, at dapibus metus mi nec massa. Fusce at tellus eget quam pharetra tincidunt in vel est. Suspendisse sit amet erat quam. Suspendisse consequat volutpat dignissim. Proin aliquet finibus purus in tempus. Suspendisse potenti. Nullam ornare suscipit augue ac interdum. Nulla eu nulla ac diam mattis porttitor at dignissim est. 
