@@ -1,8 +1,8 @@
 baseurl: "/"
 title: "Universal"
-main_js: "assets/js/main.js"
+# main_js: "assets/js/main.js"
 params:
-  palette: "#3eb2fd"
+  primary_color: "#3eb2fd"
   footer_link: https://www.stackbit.com
   show_social_media_links: true
 menus:
@@ -11,6 +11,10 @@ menus:
       weight: 1
       url: index.html
       title: Home
+    - identifier: features
+      weight: 2
+      url: features.html
+      title: Features
 sass:
   input_file: sass/main.scss.njk
   output_file: assets/css/main.css

@@ -1,7 +1,7 @@
 ---
 title: Home
 template: home
-sub_heading: "A Unibit Starter Theme"
+heading: "A Unibit Starter Theme"
 ---
 
 Unibit is a superset of existing static site generators. It *can* be used as a standalone ssg **or** any site built using Unibit can be imported into [Stackbit](https://www.stackbit.com) and seamlessly converted into other static site generators and headless CMS. 

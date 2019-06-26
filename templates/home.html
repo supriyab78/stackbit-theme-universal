@@ -2,19 +2,8 @@
 
 {% block content %}
 
-<h1>{{ site.title }}</h1>
-<h2>{{ page.params.sub_heading }}</h2>
+<h1>{{ page.params.heading }}</h1>
 
 {{ page.content  }}
-
-<div class="features">
-  {% set features = getPages("/features") | sort(true, true, "date") %}
-  {% for feature in features %}
-  <div class="feature">
-      <h2 class="feature-title"><a href="{{ feature.url | relative_url }}">{{ feature.params.title }}</a></h2>
-      <p>{{ feature.params.description }}</p>
-  </div>
-  {% endfor %}
-</div>
 
 {% endblock %}
