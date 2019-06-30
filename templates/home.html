@@ -8,6 +8,7 @@
   {{ page.content }}
 
   {% if site.data.generators.ssg %}
+  <h5>Supported SSG</h5>
   <ul>
   {% for link in site.data.generators.ssg %}
     <li>{{ link.title }}</li>
@@ -16,6 +17,7 @@
   {% endif %}
 
   {% if site.data.generators.cms %}
+  <h5>Supported CMS</h5>
   <ul>
   {% for link in site.data.generators.cms %}
     <li>{{ link.title }}</li>
@@ -24,7 +26,7 @@
   {% endif %}
 
   {% if page.params.show_button %}
-  <a href="{{ page.params.button_url }}" class="button">{{ page.params.button_text }}</a>
+  <a href="{{ page.params.button_url }}" class="button inverse">{{ page.params.button_text }}</a>
   {% endif %}
   
 </div>
