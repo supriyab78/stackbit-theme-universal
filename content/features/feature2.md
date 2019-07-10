@@ -1,6 +1,6 @@
 ---
 title: Convert Into Other SSG's
-template: feature
+layout: feature
 image_thumbnail: images/2.jpg
 description: Unibit is a superset of existing static site generators which can convert into other SSGs.
 ---

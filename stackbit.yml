@@ -30,7 +30,7 @@ models:
   home:
     type: page
     label: Home
-    template: home
+    layout: home
     file: index.md
     hideContent: false
     singleInstance: true
@@ -98,7 +98,7 @@ models:
   feature:
     type: page
     label: Feature
-    template: feature
+    layout: feature
     folder: features
     fields:
       - type: string
@@ -117,7 +117,7 @@ models:
   features:
     type: page
     label: Features
-    template: features
+    layout: features
     fields:
       - type: string
         name: title

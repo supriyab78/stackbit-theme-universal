@@ -1,6 +1,6 @@
 ---
 title: Build With Unibit
-template: feature
+layout: feature
 description: Unibit is a static site generator that using the Nunjucks templating system.
 image_thumbnail: images/1.jpg
 ---
