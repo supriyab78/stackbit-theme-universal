@@ -9,6 +9,11 @@ menus:
       weight: 1
       url: /
       title: Home
+  secondary:
+    - identifier: about
+      weight: 1
+      url: about
+      title: About
 sass:
   input_file: sass/main.scss.njk
   output_file: assets/css/main.css
