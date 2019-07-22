@@ -1,10 +1,10 @@
 ---
-title: Convert Into Other SSG's
+title: Convert Into Other SSGs
 template: feature
+description: Unibit is a superset of existing static site generators and can be converted into other SSG's
 image_thumbnail: images/2.jpg
-description: Unibit is a superset of existing static site generators which can convert into other SSGs.
+button_link: unibit/conversion
+button_text: "Conversion Documentation"
 ---
 
-Learn how to use stackbit.yaml to convert Unibit themes into other SSG's. 
-
-<a href="https://docs.stackbit.com/content-model" class="button inverse">Content Model Docs</a>
+Unibit is a superset of existing static site generators, if you build a theme according to the Unibit spec then Stackbit will be able to convert (transpile) that theme into other static site generators like Hugo, Jekyll and Gatsby.

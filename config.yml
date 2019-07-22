@@ -2,6 +2,7 @@ baseurl: "/"
 title: "Universal"
 params:
   logo: 'images/logo.svg'
+  docs_url: 'https://docs.stackbit.com'
 menus:
   main:
     - identifier: home

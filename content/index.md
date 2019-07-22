@@ -3,7 +3,7 @@ title: Home
 template: home
 heading: "A Unibit Starter Theme"
 show_button: true
-button_url: https://stackbit-docs.netlify.com/unibit/
+button_link: unibit
 button_text: "Unibit Documentation"
 ---
 
