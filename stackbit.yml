@@ -18,6 +18,11 @@ models:
         label: Logo
         description: the path of the logo image
         required: true
+      - type: string
+        name: docs_url
+        label: Documentation Base URL
+        description: the domain name of the external documentation site
+        required: true
   home:
     type: page
     label: Home
@@ -40,11 +45,11 @@ models:
         label: Show Button
         description: Show or hide the button on the hompage
       - type: string
-        name: button_url
+        name: homepage_button_link
         label: Button URL
         description: Button link
       - type: string
-        name: button_text
+        name: homepage_button_text
         label: Button Text
         description: Text displayed in the button
   links:
@@ -105,6 +110,14 @@ models:
         name: image_thumbnail
         label: Thumbnail Image
         description: The image shown in the feature.
+      - type: string
+        name: button_link
+        label: Button Link
+        description: The button link
+      - type: string
+        name: button_text
+        label: Button Text
+        description: The button text
   features:
     type: page
     label: Features
@@ -115,7 +128,10 @@ models:
         label: Title
         description: The title of the page.
         required: true
-
+  about:
+      type: page
+      label: About
+      template: basic
 stackbit_banner:
   show_banner: true
   name: Universal
