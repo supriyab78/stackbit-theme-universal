@@ -1,6 +1,6 @@
 ---
 title: Features
-template: features
+layout: features
 menus:
   main:
     identifier: features

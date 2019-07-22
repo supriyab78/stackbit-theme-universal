@@ -1,6 +1,6 @@
 ---
 title: About
-template: basic
+layout: basic
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed commodo urna, quis consequat sapien. Aenean est augue, iaculis in mattis vitae, faucibus sit amet justo. Donec placerat suscipit nunc vel ornare. Etiam semper dolor pharetra augue consequat, at tincidunt dui mollis. Donec pharetra et nulla sit amet tincidunt. Maecenas tincidunt id purus sed interdum. Etiam ultrices et enim vel laoreet. Vestibulum gravida sed libero et condimentum. Quisque venenatis, felis ac pretium vehicula, augue nulla pharetra nisi, sed faucibus eros neque sed felis. Vestibulum vitae vehicula sapien. Phasellus ipsum ante, efficitur eget orci sit amet, luctus suscipit sapien. Maecenas et dapibus sem, eu molestie velit. Vivamus in finibus justo.

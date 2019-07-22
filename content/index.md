@@ -1,6 +1,6 @@
 ---
 title: Home
-template: home
+layout: home
 heading: "A Unibit Starter Theme"
 show_button: true
 button_link: unibit
