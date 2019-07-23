@@ -129,10 +129,10 @@ models:
         description: The title of the page.
         required: true
   about:
-      type: page
-      label: About
-      template: basic
-      fields:
+    type: page
+    label: About
+    template: basic
+    fields:
       - type: string
         name: title
         label: Title
