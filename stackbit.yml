@@ -132,6 +132,12 @@ models:
       type: page
       label: About
       template: basic
+      fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the page.
+        required: true
 stackbit_banner:
   show_banner: true
   name: Universal
