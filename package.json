@@ -1,5 +1,5 @@
 {
-  "name": "universal",
+  "name": "unibit",
   "version": "1.0.0",
   "description": "Default starter theme for Unibit",
   "main": "public/index.html",
@@ -22,5 +22,6 @@
   "dependencies": {
     "@stackbit/unibit": "~0.1.11",
     "nodemon": "^1.19.1"
-  }
+  },
+  "keywords": []
 }
